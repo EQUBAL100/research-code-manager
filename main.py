@@ -16,6 +16,7 @@ def calculate_summary(values):
         "minimum": min(values),
         "maximum": max(values),
         "range": max(values) - min(values),
+        "median": sorted(values)[len(values) // 2],
     }
 
 
@@ -29,3 +30,4 @@ if __name__ == "__main__":
     print(f"Minimum: {summary['minimum']:.2f}")
     print(f"Maximum: {summary['maximum']:.2f}")
     print(f"Range: {summary['range']:.2f}")
+    print(f"Median: {summary['median']:.2f}")
