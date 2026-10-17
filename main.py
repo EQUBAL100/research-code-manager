@@ -15,6 +15,7 @@ def calculate_summary(values):
         "average": calculate_average(values),
         "minimum": min(values),
         "maximum": max(values),
+        "range": max(values) - min(values),
     }
 
 
@@ -27,3 +28,4 @@ if __name__ == "__main__":
     print(f"Average: {summary['average']:.2f}")
     print(f"Minimum: {summary['minimum']:.2f}")
     print(f"Maximum: {summary['maximum']:.2f}")
+    print(f"Range: {summary['range']:.2f}")
